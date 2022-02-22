@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Forms - Template</title>
+        <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+            <a class="navbar-brand js-scroll-trigger" href="#page-top">
+                <span class="d-block d-lg-none">PTC</span>
+                <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/Pittsburgh_Technical_College.jpg" alt="School logo" /></span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="index.html">Organization Guidelines</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="meetEventTrack.html">Meeting/Event Tracker Form</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="fundraising.html">Fundraising Request Form</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="checkRequest.html">Check Request Form</a></li>
+                    <!-- 
+                        just in case we need 1 or 2 more nav items in the future
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Interests</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Awards</a></li> 
+                    -->
+                </ul>
+            </div>
+        </nav>
+        <!-- Page Content-->
+        <div class="container-fluid p-0">
+            <!-- title-->
+            <section class="resume-section" id="title">
+                <div class="resume-section-content">
+                    <h1 class="mb-0">
+                        Student Club
+                        <br>
+                        <span class="text-primary">Activities and Forms</span>
+                    </h1>
+                    <div class="subheading mb-5">
+                        1111 McKee Road · Oakdale, PA 15071 · 1-800-784-9675 ·
+                        <a href="https://www.ptcollege.edu" target="_blank">www.ptcollege.edu</a>
+                    </div>
+                    
+                    <!-- 
+                        in case we decide we want to add these back eventually for some reason
+                        <div class="social-icons">
+                        <a class="social-icon" href="#!"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="social-icon" href="#!"><i class="fab fa-github"></i></a>
+                        <a class="social-icon" href="#!"><i class="fab fa-twitter"></i></a>
+                        <a class="social-icon" href="#!"><i class="fab fa-facebook-f"></i></a>
+                    </div> 
+                    -->
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Fundraising form-->
+            <section class="resume-section" id="meetingEventTracker">
+                <div class="resume-section-content">
+                    <section class="mb-5">
+                        <h2>Student Organization</h2>
+                        <h3>Check Request Form</h3>
+                    </section> 
+                    <form class="mb-5" action="#" method="get" id="meetEventTracker">
+                        <section id="payTo">
+                            <label for="reqPayTo">Request for payment to</label>
+                            <input type="text" name="reqPayTo" placeholder="Full Name of Payee/Organiztion">
+                        </section>
+                        <section id="amountPaid">
+                            <label for="amtPay">Amount to be paid</label>
+                            <input type="number" name="amtPay" step="0.01" min="0" value="0.00">
+                        </section>
+                        <section id="reqReason">
+                            <label for="reqRsn">Reason for request</label>
+                            <br>
+                            <textarea name="reqRsn" placeholder="Explanation of why you a check is requested"></textarea>
+                        </section>
+                            <section id="indReqCheck">
+                                <label for="chkReq">Individual requestiong check</label>
+                                <input type="text" name="chkReq">
+                            </section>
+                            <section id="chargedOrg">
+                                <label for="orgChrg">Organization to be charged</label>
+                                <input type="text" name="orgChrg">
+                            </section>
+                        <section id="needDate">
+                            <label for="neededBy">Indicate what date this check is needed</label>
+                            <input type="date" name="neededBy">
+                        </section>
+                        <section id="secondSig">
+                            <label for="secSig">2nd signature for approval</label>
+                            <input type="text" name="secSig">
+                        </section>
+                        <section id="advisorSigConfirm">
+                            <input type="checkbox" name="sigConf">
+                            <label for="sigConfirm">By checking you agree and confirm that the name in the box can be used as a signature and is your own</label>                     
+                        </section> 
+                        <section id="currentDate">
+                            <label for="currDate">Date of Signature</label>
+                            <input type="date" name="currDate">
+                        </section>   
+                        <section id="comments">
+                            <label for="comm">Comments</label>
+                            <br>
+                            <textarea name="comm" placeholder="Provide any questions or comments you may have"></textarea>
+                        </section>                                        
+                        <input type="button" name="formSubmit" value="Submit">
+                        <!--
+                            There's an extra little bottom portion on this one as well that looks like its 
+                            supposed to be filled out by the person recieving the form, I left it out for now
+                            so we can discuss how we want to handle that at our group meeting
+                        -->
+                    </form>
+                </div>
+            </section>       
+        </div>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
