@@ -14,6 +14,8 @@
         <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <!-- javascript that scrolls to form section by clikcing invisible <a> when window loads -->
+        <script src="js/autoScroll.js" defer></script>
     </head>
     <body id="page-top">
         <!-- Navigation-->
@@ -26,7 +28,7 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav">
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="index.html">Organization Guidelines</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="meetEventTrack.html">Meeting/Event Tracker Form</a></li>
+                    <li class="nav-item "><a class="nav-link js-scroll-trigger active" href="meetEventTrack.html">Meeting/Event Tracker Form</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="fundraising.html">Fundraising Request Form</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="checkRequest.html">Check Request Form</a></li>
                     <!-- 
@@ -51,7 +53,9 @@
                         1111 McKee Road · Oakdale, PA 15071 · 1-800-784-9675 ·
                         <a href="https://www.ptcollege.edu" target="_blank">www.ptcollege.edu</a>
                     </div>
-                    
+                    <!-- <h2>Student Organization</h2> -->
+                    <!-- <h3>Meeting/Event Tracker Sheet</h3> -->
+                        <a id="scroll" class="hideScroll" href="#meetingEventTracker">Click here To go to Form</a>
                     <!-- 
                         in case we decide we want to add these back eventually for some reason
                         <div class="social-icons">

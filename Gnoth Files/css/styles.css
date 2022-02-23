@@ -11433,3 +11433,8 @@ section.resume-section .resume-section-content {
     padding-bottom: 5rem;
   }
 }
+
+/* used to hide link clicked for javascript */
+.hideScroll{
+  display:none;
+}
