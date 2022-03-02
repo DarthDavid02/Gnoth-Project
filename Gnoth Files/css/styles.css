@@ -11441,6 +11441,7 @@ section.resume-section .resume-section-content {
   }
 }
 
+/* Styling to make the <a> look like a button */
 #scroll {
   background: #a52834;
   color: #f2f2f2;
@@ -11452,6 +11453,7 @@ section.resume-section .resume-section-content {
   box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.4);
 }
 
+/*what the button looks like with it gets hovered over*/
 #scroll:hover {
   background: #90232e;
   border: #90232e 3px solid;
@@ -11473,23 +11475,32 @@ section.resume-section .resume-section-content {
 .text-color{
   color: #cff4fc;
 }
-
+/* the dark color for these was hard to read so a lighter color was necessary*/
 h1, h2, .listHead{
   color:#e6dada;
 }
-
+/*makes our two pages with lists alittle easier to read*/
 .contactGroup{
   font-size: 1.2rem;
   margin-bottom: 1.1rem;
   font-weight: bold;
   color: #F7F7F7
 }
+
+/*
+  adds background to nave even when in mobile
+  also had to comment out background-color: rgba(var(--bs-primary-rgb), var(--bs-bg-opacity)) !important
+  from .bg-primary to make it work as well 
+*/
+
 nav {
   background: #a52834;
 }
+/*adds text shadows to all text to make it easier to read*/
 #address, li, h1, h2, h3 {
   text-shadow: 2px 2px 2px black;
 }
+/*makes the on page links stand out from non-links*/
 a {
   color: #c5c5c5;
   text-decoration: none;
@@ -11499,6 +11510,7 @@ a {
 a:hover {
   color: #5e5e5e;
 }
+/* Overrides the active class so it still works with our current CSS Styling */
 .active {
   background: rgba(0, 0,0, 0.2) !important;
   color: rgba(255, 255, 255, 0.7) !important;
