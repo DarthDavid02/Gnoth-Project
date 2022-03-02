@@ -33,7 +33,7 @@
   --bs-gray-700: #495057;
   --bs-gray-800: #343a40;
   --bs-gray-900: #212529;
-  --bs-primary: #bd3838;
+  --bs-primary: #a52834;
   --bs-secondary: #6c757d;
   --bs-success: #198754;
   --bs-info: #0dcaf0;
@@ -75,6 +75,7 @@
     scroll-behavior: smooth;
   }
 }
+
 
 body {
   margin: 0;
@@ -3944,7 +3945,7 @@ textarea.form-control-lg {
 .nav-link {
   display: block;
   padding: 0.5rem 1rem;
-  color: #bd5d38;
+  color: #a52834;
   text-decoration: none;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
 }
@@ -3954,7 +3955,7 @@ textarea.form-control-lg {
   }
 }
 .nav-link:hover, .nav-link:focus {
-  color: #974a2d;
+  color: #a52834;
 }
 .nav-link.disabled {
   color: #6c757d;
@@ -7811,7 +7812,7 @@ textarea.form-control-lg {
 
 .bg-primary {
   --bs-bg-opacity: 1;
-  background-color: rgba(var(--bs-primary-rgb), var(--bs-bg-opacity)) !important;
+  /* background-color: rgba(var(--bs-primary-rgb), var(--bs-bg-opacity)) !important; */
 }
 
 .bg-secondary {
@@ -11441,19 +11442,19 @@ section.resume-section .resume-section-content {
 }
 
 #scroll {
-  background: #bd5d38;
+  background: #a52834;
   color: #f2f2f2;
   text-decoration: none;
   border-radius: 2rem;
   padding: 1rem;
   text-align: center;
-  border: #bd5d38 5px solid;
+  border: #a52834 5px solid;
   box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.4);
 }
 
 #scroll:hover {
-  background: #d08162;
-  border: #d08162 3px solid;
+  background: #90232e;
+  border: #90232e 3px solid;
 }
 
 /* used to hide link clicked for javascript */
@@ -11471,4 +11472,34 @@ section.resume-section .resume-section-content {
 
 .text-color{
   color: #cff4fc;
+}
+
+h1, h2, .listHead{
+  color:#e6dada;
+}
+
+.contactGroup{
+  font-size: 1.2rem;
+  margin-bottom: 1.1rem;
+  font-weight: bold;
+  color: #F7F7F7
+}
+nav {
+  background: #a52834;
+}
+#address, li, h1, h2, h3 {
+  text-shadow: 2px 2px 2px black;
+}
+a {
+  color: #c5c5c5;
+  text-decoration: none;
+  text-shadow: 2px 2px 2px black;
+  font-weight: bold;
+}
+a:hover {
+  color: #5e5e5e;
+}
+.active {
+  background: rgba(0, 0,0, 0.2) !important;
+  color: rgba(255, 255, 255, 0.7) !important;
 }
