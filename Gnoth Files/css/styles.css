@@ -11440,6 +11440,22 @@ section.resume-section .resume-section-content {
   }
 }
 
+#scroll {
+  background: #bd5d38;
+  color: #f2f2f2;
+  text-decoration: none;
+  border-radius: 2rem;
+  padding: 1rem;
+  text-align: center;
+  border: #bd5d38 5px solid;
+  box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.4);
+}
+
+#scroll:hover {
+  background: #d08162;
+  border: #d08162 3px solid;
+}
+
 /* used to hide link clicked for javascript */
 .hideScroll{
   display:none;
